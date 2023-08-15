@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2A34CE502A89A2AD0059E7E7 /* WaifuManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A34CE4F2A89A2AD0059E7E7 /* WaifuManager.swift */; };
+		2A34CE552A8A49490059E7E7 /* WaifuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A34CE542A8A49490059E7E7 /* WaifuController.swift */; };
+		2A5AB0652A8AD6B3001AC6DB /* Waifu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A5AB0642A8AD6B3001AC6DB /* Waifu.swift */; };
 		2AFABE762A8984D800450218 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AFABE752A8984D800450218 /* AppDelegate.swift */; };
 		2AFABE782A8984D800450218 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AFABE772A8984D800450218 /* SceneDelegate.swift */; };
 		2AFABE7A2A8984D800450218 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AFABE792A8984D800450218 /* ViewController.swift */; };
@@ -16,6 +19,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2A3385A32A8C0282003BC0A4 /* гемдевдок.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "гемдевдок.md"; sourceTree = "<group>"; };
+		2A34CE4F2A89A2AD0059E7E7 /* WaifuManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaifuManager.swift; sourceTree = "<group>"; };
+		2A34CE542A8A49490059E7E7 /* WaifuController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaifuController.swift; sourceTree = "<group>"; };
+		2A5AB0642A8AD6B3001AC6DB /* Waifu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Waifu.swift; sourceTree = "<group>"; };
 		2AFABE722A8984D800450218 /* waifuGenerator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = waifuGenerator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2AFABE752A8984D800450218 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2AFABE772A8984D800450218 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -37,6 +44,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2A34CE512A89A2B40059E7E7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2A34CE4F2A89A2AD0059E7E7 /* WaifuManager.swift */,
+				2A5AB0642A8AD6B3001AC6DB /* Waifu.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		2A34CE522A8A49100059E7E7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2AFABE7B2A8984D800450218 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		2A34CE532A8A491C0059E7E7 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				2AFABE792A8984D800450218 /* ViewController.swift */,
+				2A34CE542A8A49490059E7E7 /* WaifuController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 		2AFABE692A8984D800450218 = {
 			isa = PBXGroup;
 			children = (
@@ -57,9 +90,11 @@
 			isa = PBXGroup;
 			children = (
 				2AFABE752A8984D800450218 /* AppDelegate.swift */,
+				2A3385A32A8C0282003BC0A4 /* гемдевдок.md */,
 				2AFABE772A8984D800450218 /* SceneDelegate.swift */,
-				2AFABE792A8984D800450218 /* ViewController.swift */,
-				2AFABE7B2A8984D800450218 /* Main.storyboard */,
+				2A34CE532A8A491C0059E7E7 /* Controller */,
+				2A34CE522A8A49100059E7E7 /* View */,
+				2A34CE512A89A2B40059E7E7 /* Model */,
 				2AFABE7E2A8984D800450218 /* Assets.xcassets */,
 				2AFABE802A8984D800450218 /* LaunchScreen.storyboard */,
 				2AFABE832A8984D800450218 /* Info.plist */,
@@ -138,8 +173,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2A5AB0652A8AD6B3001AC6DB /* Waifu.swift in Sources */,
+				2A34CE502A89A2AD0059E7E7 /* WaifuManager.swift in Sources */,
 				2AFABE7A2A8984D800450218 /* ViewController.swift in Sources */,
 				2AFABE762A8984D800450218 /* AppDelegate.swift in Sources */,
+				2A34CE552A8A49490059E7E7 /* WaifuController.swift in Sources */,
 				2AFABE782A8984D800450218 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -302,9 +340,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = bekhEternal.waifuGenerator;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -330,9 +371,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = bekhEternal.waifuGenerator;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
