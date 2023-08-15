@@ -22,23 +22,8 @@ class ViewController: UIViewController {
     }
 
     @IBAction func getWaifuPressed(_ sender: Any) {
-        
         waifuManager.getWaifu()
         starr.flashImage(image: "starPressed", wait: 0.2)
-        
-        //  backgroundView.newImage(new: "bg1", wait: 0.3)
-//        DispatchQueue.main.asyncAfter(deadline: .now() + 0.3) {
-//            self.backgroundView.image = UIImage(named: "bg1")
-//        }
-      
-//        DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
-//            self.backgroundView.image = UIImage(named: "bg2")
-//        }
-//        DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
-//            self.backgroundView.image = UIImage(named: "bg2")
-//        }
-        
-        
     }
     
 }
@@ -77,15 +62,13 @@ extension UIImageView {
 extension ViewController: sendWaifuDelegate {
     func sendWaifu(_ waifu: Waifu) {
         myWaifu = waifu
-//        let waifuUrl = URL(string: myWaifu.images?.first?.url ?? "")!
-//         backgroundView.imageFrom(url: waifuUrl)
+        let waifuUrl = URL(string: myWaifu.images?.first?.url ?? "")!
+        backgroundView.imageFrom(url: waifuUrl)
         DispatchQueue.main.async {
             var waifuController = WaifuController()
-            waifuController.waifuUrl = URL(string: waifu.images?.first?.url ?? "")
-        }
-               
-        DispatchQueue.main.async {
-            self.performSegue(withIdentifier: "waifuSegue", sender: self)
+            waifuController.waifuUrl = waifuUrl
+            self.present(waifuController, animated: true)
+            //self.performSegue(withIdentifier: "waifuSegue", sender: self)
         }
     }
 }
