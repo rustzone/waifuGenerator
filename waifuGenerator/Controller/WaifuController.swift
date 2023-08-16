@@ -16,8 +16,8 @@ class WaifuController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         if let url = waifuUrl {
-            waifuImageView.image = loadGif("fallingSpiral")
-            waifuImageView.imageFrom(url: url)
+            //waifuImageView.image = loadGif("fallingSpiral")
+            //waifuImageView.imageFrom(url: url)
         }
     }
     @IBAction func buttonBack(_ sender: Any) {
