@@ -10,6 +10,7 @@
 		2A0FD1AD2A8D19A900A3BF36 /* spiral.gif in Resources */ = {isa = PBXBuildFile; fileRef = 2A0FD1AC2A8D19A900A3BF36 /* spiral.gif */; };
 		2A0FD1B12A8D1EE100A3BF36 /* fallingSpiral.gif in Resources */ = {isa = PBXBuildFile; fileRef = 2A0FD1B02A8D1EE100A3BF36 /* fallingSpiral.gif */; };
 		2A0FD1B32A8D1EEA00A3BF36 /* sunnySpiral.gif in Resources */ = {isa = PBXBuildFile; fileRef = 2A0FD1B22A8D1EEA00A3BF36 /* sunnySpiral.gif */; };
+		2A3289FF2A8D8126005A4F5E /* Transgender Grotesk-Regular-Trial.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2A3289FE2A8D8126005A4F5E /* Transgender Grotesk-Regular-Trial.ttf */; };
 		2A34CE502A89A2AD0059E7E7 /* WaifuManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A34CE4F2A89A2AD0059E7E7 /* WaifuManager.swift */; };
 		2A34CE552A8A49490059E7E7 /* WaifuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A34CE542A8A49490059E7E7 /* WaifuController.swift */; };
 		2A5AB0652A8AD6B3001AC6DB /* Waifu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A5AB0642A8AD6B3001AC6DB /* Waifu.swift */; };
@@ -26,6 +27,7 @@
 		2A0FD1AF2A8D1EC400A3BF36 /* spiral.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = spiral.gif; sourceTree = "<group>"; };
 		2A0FD1B02A8D1EE100A3BF36 /* fallingSpiral.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = fallingSpiral.gif; path = ../../../../../assets/waifu/gifs/fallingSpiral.gif; sourceTree = "<group>"; };
 		2A0FD1B22A8D1EEA00A3BF36 /* sunnySpiral.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = sunnySpiral.gif; path = ../../../../../assets/waifu/gifs/sunnySpiral.gif; sourceTree = "<group>"; };
+		2A3289FE2A8D8126005A4F5E /* Transgender Grotesk-Regular-Trial.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Transgender Grotesk-Regular-Trial.ttf"; path = "../../../../../../Downloads/type.today-order-27491/Transgender Grotesk-Regular-Trial.ttf"; sourceTree = "<group>"; };
 		2A3385A32A8C0282003BC0A4 /* гемдевдок.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "гемдевдок.md"; sourceTree = "<group>"; };
 		2A34CE4F2A89A2AD0059E7E7 /* WaifuManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaifuManager.swift; sourceTree = "<group>"; };
 		2A34CE542A8A49490059E7E7 /* WaifuController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaifuController.swift; sourceTree = "<group>"; };
@@ -59,6 +61,14 @@
 				2A0FD1B22A8D1EEA00A3BF36 /* sunnySpiral.gif */,
 			);
 			path = gifs;
+			sourceTree = "<group>";
+		};
+		2A3289FD2A8D8103005A4F5E /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				2A3289FE2A8D8126005A4F5E /* Transgender Grotesk-Regular-Trial.ttf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 		2A34CE512A89A2B40059E7E7 /* Model */ = {
@@ -107,6 +117,7 @@
 		2AFABE742A8984D800450218 /* waifuGenerator */ = {
 			isa = PBXGroup;
 			children = (
+				2A3289FD2A8D8103005A4F5E /* Fonts */,
 				2AFABE752A8984D800450218 /* AppDelegate.swift */,
 				2A3385A32A8C0282003BC0A4 /* гемдевдок.md */,
 				2AFABE772A8984D800450218 /* SceneDelegate.swift */,
@@ -180,6 +191,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2AFABE822A8984D800450218 /* LaunchScreen.storyboard in Resources */,
+				2A3289FF2A8D8126005A4F5E /* Transgender Grotesk-Regular-Trial.ttf in Resources */,
 				2AFABE7F2A8984D800450218 /* Assets.xcassets in Resources */,
 				2A0FD1B32A8D1EEA00A3BF36 /* sunnySpiral.gif in Resources */,
 				2A0FD1AD2A8D19A900A3BF36 /* spiral.gif in Resources */,

@@ -7,6 +7,11 @@
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Transgender Grotesk-Regular-Trial.ttf">
+            <string>TransgenderGrotesk-Regular</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -62,30 +67,70 @@
             <objects>
                 <viewController id="uyL-05-wO2" customClass="WaifuController" customModule="waifuGenerator" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="oDj-MY-yL2">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="1490"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg2" translatesAutoresizingMaskIntoConstraints="NO" id="Huc-5h-mt3">
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="muh-Q1-4af">
                                 <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Mfa-sd-x5u" userLabel="ContentView">
+                                        <rect key="frame" x="0.0" y="0.0" width="393" height="1700"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg2" translatesAutoresizingMaskIntoConstraints="NO" id="Huc-5h-mt3">
+                                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="852" id="MCc-ne-Lbb"/>
+                                                </constraints>
+                                            </imageView>
+                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4BR-5I-C3b" userLabel="DetailsView">
+                                                <rect key="frame" x="0.0" y="860" width="393" height="828"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wSX-7w-9p5">
+                                                        <rect key="frame" x="-9" y="8" width="429" height="800"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <mutableString key="text">THIS IS NOT A WAIFU ITS A FUCKING SQUID THAT WILL EAT YOU AND YOU BE BURNING A SKULL IN A SPACE IN THE ABYSS OF THE COSMIC VOID, A TERROR UNIMAGINABLE LURKS. A MALICIOUS PRESENCE, A HORROR BEYOND COMPREHENSION, AWAKENS AMIDST THE STARS. IT HUNTS, IT FEEDS, AND IT FEASTS UPON THE VERY SOULS OF ASTRONAUTS WHO DARE TO VENTURE INTO THE DARK UNKNOWN. GALAXIES BECOME GRAVES, AND THE SCREAMS OF THE DAMNED ECHO THROUGH THE COLD VACUUM OF SPACE. AS THE SHADOWS LENGTHEN AND THE STARS TURN RED, THE COSMOS ITSELF BECOMES A MAZE OF DOOM. THERE IS NOWHERE TO HIDE, NO ESCAPE FROM THE CLUTCHES OF THIS SPACE HORROR. FOR IN THE ENDLESS EXpanse, FEAR TAKES ON A NEW, UNIMAGINABLE FORM.</mutableString>
+                                                        <fontDescription key="fontDescription" name="TransgenderGrotesk-Regular" family="Transgender Grotesk" pointSize="28"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <color key="backgroundColor" red="0.72297069729999996" green="0.87990387530000003" blue="0.9715587497" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            </view>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="1700" id="XjZ-E1-sCj"/>
+                                            <constraint firstItem="Huc-5h-mt3" firstAttribute="top" secondItem="Mfa-sd-x5u" secondAttribute="top" id="YvX-HV-cWB"/>
+                                            <constraint firstItem="Huc-5h-mt3" firstAttribute="leading" secondItem="Mfa-sd-x5u" secondAttribute="leading" id="jNc-8Z-z7O"/>
+                                            <constraint firstItem="Huc-5h-mt3" firstAttribute="trailing" secondItem="Mfa-sd-x5u" secondAttribute="trailing" id="vD0-Zg-274"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="Mfa-sd-x5u" firstAttribute="trailing" secondItem="DkZ-kF-jq9" secondAttribute="trailing" id="D48-vN-Cz9"/>
+                                    <constraint firstItem="Mfa-sd-x5u" firstAttribute="width" secondItem="Sj7-Ze-rDs" secondAttribute="width" id="Qoh-LB-Fpg"/>
+                                    <constraint firstItem="Mfa-sd-x5u" firstAttribute="leading" secondItem="DkZ-kF-jq9" secondAttribute="leading" id="YGp-FK-TU7"/>
+                                    <constraint firstItem="Mfa-sd-x5u" firstAttribute="bottom" secondItem="DkZ-kF-jq9" secondAttribute="bottom" id="aKM-lP-orJ"/>
+                                    <constraint firstItem="Mfa-sd-x5u" firstAttribute="top" secondItem="DkZ-kF-jq9" secondAttribute="top" id="s7f-as-V3L"/>
+                                </constraints>
+                                <viewLayoutGuide key="contentLayoutGuide" id="DkZ-kF-jq9"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="Sj7-Ze-rDs"/>
+                            </scrollView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="en8-xi-Lbv"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <variation key="default">
-                            <mask key="subviews">
-                                <exclude reference="Huc-5h-mt3"/>
-                            </mask>
-                        </variation>
                     </view>
                     <navigationItem key="navigationItem" id="wD3-ll-jm6"/>
+                    <size key="freeformSize" width="393" height="1500"/>
                     <connections>
                         <outlet property="waifuImageView" destination="Huc-5h-mt3" id="VwD-RP-ZCb"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BLi-F2-fKX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="860.30534351145036" y="119.71830985915494"/>
+            <point key="canvasLocation" x="852.67175572519079" y="224.64788732394368"/>
         </scene>
     </scenes>
     <resources>
