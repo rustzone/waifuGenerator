@@ -14,16 +14,26 @@ class ViewController: UIViewController {
     
     var waifuManager = WaifuManager()
     var myWaifu = Waifu(images: nil)
+    var waifuUrl: URL?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         waifuManager.delegate = self
         // Do any additional setup after loading the view.
+        
     }
 
     @IBAction func getWaifuPressed(_ sender: Any) {
         waifuManager.getWaifu()
         starr.flashImage(image: "starPressed", wait: 0.2)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "waifuSegue" {
+            print(waifuUrl)
+            let destinationVC = segue.destination as! WaifuController
+            destinationVC.waifuUrl = waifuUrl
+        }
     }
     
 }
@@ -62,13 +72,12 @@ extension UIImageView {
 extension ViewController: sendWaifuDelegate {
     func sendWaifu(_ waifu: Waifu) {
         myWaifu = waifu
-        let waifuUrl = URL(string: myWaifu.images?.first?.url ?? "")!
-        backgroundView.imageFrom(url: waifuUrl)
+        waifuUrl = URL(string: myWaifu.images?.first?.url ?? "")
         DispatchQueue.main.async {
-            var waifuController = WaifuController()
-            waifuController.waifuUrl = waifuUrl
-            self.present(waifuController, animated: true)
-            //self.performSegue(withIdentifier: "waifuSegue", sender: self)
+            //self.present(waifuController, animated: true)
+            self.performSegue(withIdentifier: "waifuSegue", sender: self)
         }
     }
 }
+
+
